@@ -1,0 +1,21 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: auth-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/nexushr
+    username: tiger
+    password: Mp@762003
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  secret: ${JWT_SECRET:change-this-to-a-long-random-secret-in-prod}
+  expiration-ms: 900000
+  refresh-expiration-ms: 604800000
