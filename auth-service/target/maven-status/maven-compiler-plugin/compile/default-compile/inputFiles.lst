@@ -1,1 +1,15 @@
 C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\AuthServiceApplication.java
+C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\config\PasswordEncoderConfig.java
+C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\config\SecurityConfig.java
+C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\Controller\AuthController.java
+C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\dto\AuthResponse.java
+C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\dto\LoginRequest.java
+C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\dto\SignupRequest.java
+C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\entity\Employee.java
+C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\entity\Role.java
+C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\repository\EmployeeRepository.java
+C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\repository\RoleRepository.java
+C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\security\JwtAuthFilter.java
+C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\security\JwtUtils.java
+C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\service\AuthService.java
+C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\service\CustomUserDetailsService.java

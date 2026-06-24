@@ -1,16 +1,21 @@
 server:
-  port: 8082
+  port: 8081
 
 spring:
   application:
-    name: employee-service
+    name: auth-service
   datasource:
     url: jdbc:postgresql://localhost:5432/nexushr
     username: postgres
-    password: postgres
+    password: Mp@762003
   jpa:
     hibernate:
       ddl-auto: validate
-  flyway:
-    enabled: true
-    locations: classpath:db/migration
+    properties:
+      hibernate:
+        format_sql: true
+
+jwt:
+  secret: change-this-to-a-long-random-secret-in-prod
+  expiration-ms: 900000
+  refresh-expiration-ms: 604800000
