@@ -18,6 +18,16 @@ CREATE TABLE IF NOT EXISTS employee_roles (
     PRIMARY KEY (employee_id, role_id)
 );
 
+CREATE TABLE IF NOT EXISTS attendance (
+    id BIGSERIAL PRIMARY KEY,
+    employee_id BIGINT NOT NULL,
+    attendance_date DATE NOT NULL,
+    check_in TIMESTAMP,
+    check_out TIMESTAMP,
+    status VARCHAR(20),
+    UNIQUE(employee_id, attendance_date)
+);
+
 INSERT INTO roles (name) VALUES ('ROLE_ADMIN') ON CONFLICT DO NOTHING;
 INSERT INTO roles (name) VALUES ('ROLE_MANAGER') ON CONFLICT DO NOTHING;
 INSERT INTO roles (name) VALUES ('ROLE_EMPLOYEE') ON CONFLICT DO NOTHING;

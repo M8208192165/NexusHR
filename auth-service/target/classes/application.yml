@@ -12,6 +12,10 @@ spring:
   jpa:
     hibernate:
       ddl-auto: none
+      data:
+      redis:
+      host: localhost
+      port: 6379
     properties:
       hibernate:
         format_sql: true

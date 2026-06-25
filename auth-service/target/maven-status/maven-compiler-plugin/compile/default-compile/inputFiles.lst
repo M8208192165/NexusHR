@@ -1,5 +1,6 @@
 C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\AuthServiceApplication.java
 C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\config\PasswordEncoderConfig.java
+C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\config\RedisConfig.java
 C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\config\SecurityConfig.java
 C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\Controller\AuthController.java
 C:\Users\chitt\Downloads\nexushr-day1-scaffold\nexushr\auth-service\src\main\java\com\zidio\nexushr\auth\dto\AuthResponse.java
