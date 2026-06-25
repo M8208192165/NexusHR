@@ -16,5 +16,5 @@ public class SignupRequest {
     @NotBlank
     private String password;
 
-    private String role; // ROLE_ADMIN, ROLE_MANAGER, ROLE_EMPLOYEE
+    private String role; 
 }
