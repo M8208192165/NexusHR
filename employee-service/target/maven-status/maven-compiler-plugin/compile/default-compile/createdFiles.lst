@@ -11,4 +11,5 @@ com\zidio\nexushr\employee\entity\Leave.class
 com\zidio\nexushr\employee\entity\Attendance$AttendanceBuilder.class
 com\zidio\nexushr\employee\repository\LeaveRepository.class
 com\zidio\nexushr\employee\entity\Attendance$AttendanceStatus.class
+com\zidio\nexushr\employee\config\CorsConfig.class
 com\zidio\nexushr\employee\service\LeaveService.class

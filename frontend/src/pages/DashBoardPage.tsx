@@ -24,6 +24,10 @@ export default function DashboardPage() {
           >
             Logout
           </button>
+          <button onClick={() => navigate("/attendance")}
+             className="text-slate-400 hover:text-white text-sm transition">
+            Attendance
+          </button>
         </div>
       </nav>
 
