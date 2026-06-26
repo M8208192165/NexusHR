@@ -7,7 +7,10 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/nexushr
     username: postgres
-    password: postgres
+    password: Mp@762003
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect

@@ -1,1 +1,7 @@
+com\zidio\nexushr\payroll\service\PayrollService.class
+com\zidio\nexushr\payroll\entity\Payroll.class
+com\zidio\nexushr\payroll\entity\Payroll$PayrollBuilder.class
+com\zidio\nexushr\payroll\repository\PayrollRepository.class
+com\zidio\nexushr\payroll\entity\Payroll$PayrollStatus.class
+com\zidio\nexushr\payroll\controller\PayrollController.class
 com\zidio\nexushr\payroll\PayrollServiceApplication.class
