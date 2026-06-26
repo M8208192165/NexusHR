@@ -18,15 +18,20 @@ export default function DashboardPage() {
         <div className="flex items-center gap-4">
           <span className="text-slate-400 text-sm">{email}</span>
           <span className="bg-indigo-600 text-white text-xs px-2 py-1 rounded">{role}</span>
-          <button
-            onClick={handleLogout}
-            className="text-slate-400 hover:text-white text-sm transition"
-          >
-            Logout
-          </button>
+          
           <button onClick={() => navigate("/attendance")}
              className="text-slate-400 hover:text-white text-sm transition">
             Attendance
+          </button>
+         
+          <button onClick={() => navigate("/leaves")}
+            className="text-slate-400 hover:text-white text-sm transition">
+             Leaves
+          </button>
+           <button
+            onClick={handleLogout}
+            className="text-slate-400 hover:text-white text-sm transition">
+            Logout
           </button>
         </div>
       </nav>

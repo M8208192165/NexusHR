@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashBoardPage";
 import AttendancePage from "./pages/AttendancePage";
+import LeavePage from "./pages/LeavePage";
 import ProtectedRoute from "./components/ProtectedRoute";
 
 export default function App() {
@@ -14,6 +15,9 @@ export default function App() {
       } />
       <Route path="/attendance" element={
         <ProtectedRoute><AttendancePage /></ProtectedRoute>
+      } />
+      <Route path="/leaves" element={
+        <ProtectedRoute><LeavePage /></ProtectedRoute>
       } />
     </Routes>
   );
