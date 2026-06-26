@@ -4,6 +4,7 @@ import DashboardPage from "./pages/DashBoardPage";
 import AttendancePage from "./pages/AttendancePage";
 import LeavePage from "./pages/LeavePage";
 import ProtectedRoute from "./components/ProtectedRoute";
+import PayrollPage from "./pages/PayrollPage";
 
 export default function App() {
   return (
@@ -18,6 +19,9 @@ export default function App() {
       } />
       <Route path="/leaves" element={
         <ProtectedRoute><LeavePage /></ProtectedRoute>
+      } />
+      <Route path="/payroll" element={
+        <ProtectedRoute><PayrollPage /></ProtectedRoute>
       } />
     </Routes>
   );
