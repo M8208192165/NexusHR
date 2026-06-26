@@ -28,6 +28,7 @@ export default function DashboardPage() {
             className="text-slate-400 hover:text-white text-sm transition">
             Payroll
           </button>
+         
           <div className="flex items-center gap-3 ml-4 pl-4 border-l border-slate-700">
             <span className="text-slate-400 text-sm">{email}</span>
             <span className="bg-indigo-600 text-white text-xs px-2 py-1 rounded">{role}</span>

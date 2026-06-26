@@ -5,6 +5,7 @@ import AttendancePage from "./pages/AttendancePage";
 import LeavePage from "./pages/LeavePage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import PayrollPage from "./pages/PayrollPage";
+import PerformancePage from "./pages/PerformancePage";
 
 export default function App() {
   return (
@@ -23,6 +24,11 @@ export default function App() {
       <Route path="/payroll" element={
         <ProtectedRoute><PayrollPage /></ProtectedRoute>
       } />
+
+      
+<Route path="/performance" element={
+  <ProtectedRoute><PerformancePage /></ProtectedRoute>
+} />
     </Routes>
   );
 }
