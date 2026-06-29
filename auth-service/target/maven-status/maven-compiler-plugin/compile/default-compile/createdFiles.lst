@@ -1,5 +1,4 @@
 com\zidio\nexushr\auth\entity\Role.class
-com\zidio\nexushr\auth\config\RedisConfig.class
 com\zidio\nexushr\auth\dto\SignupRequest.class
 com\zidio\nexushr\auth\security\JwtUtils.class
 com\zidio\nexushr\auth\service\AuthService.class
