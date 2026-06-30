@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axiosClient from "../api/axiosClient";
 
 const EMPLOYEE_ID = 1;
-const BASE_URL = "http://localhost:8083";
+const BASE_URL = "https://nexushr-payroll.onrender.com";
 
 export default function PayrollPage() {
   const navigate = useNavigate();

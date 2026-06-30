@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axiosClient from "../api/axiosClient";
 
 const EMPLOYEE_ID = 1; // hardcoded for now
+const BASE_URL = "https://nexushr-employee.onrender.com";
 
 export default function AttendancePage() {
   const navigate = useNavigate();
