@@ -1,20 +1,18 @@
 server:
-  port: 8082
+  port: ${PORT:8082}
 
 spring:
   application:
     name: employee-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/nexushr
-    username: postgres
-    password: Mp@762003
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/nexushr}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:tiger}
   jpa:
     hibernate:
       ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
   flyway:
     enabled: false
-
-jwt:
-  secret: change-this-to-a-long-random-secret-in-prod
-  expiration-ms: 900000
-  refresh-expiration-ms: 604800000

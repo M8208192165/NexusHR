@@ -1,16 +1,16 @@
 server:
-  port: 8083
+  port: ${PORT:8083}
 
 spring:
   application:
     name: payroll-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/nexushr
-    username: postgres
-    password: Mp@762003
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/nexushr}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:tiger}
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
