@@ -3,28 +3,27 @@ import { useMutation, useQuery } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 import axiosClient from "../api/axiosClient";
 
-const EMPLOYEE_ID = 1; // hardcoded for now
+const EMPLOYEE_ID = 1;
 const BASE_URL = "https://nexushr-employee.onrender.com";
+
 export default function AttendancePage() {
   const navigate = useNavigate();
   const [message, setMessage] = useState("");
 
-  // Fetch attendance records
   const { data: attendance, refetch } = useQuery({
     queryKey: ["attendance"],
     queryFn: async () => {
       const { data } = await axiosClient.get(
-        `http://localhost:8082/api/attendance/${EMPLOYEE_ID}`
+        `${BASE_URL}/api/attendance/${EMPLOYEE_ID}`
       );
       return data;
     },
   });
 
-  // Check In
   const checkIn = useMutation({
     mutationFn: async () => {
       const { data } = await axiosClient.post(
-        `http://localhost:8082/api/attendance/checkin/${EMPLOYEE_ID}`
+        `${BASE_URL}/api/attendance/checkin/${EMPLOYEE_ID}`
       );
       return data;
     },
@@ -35,11 +34,10 @@ export default function AttendancePage() {
     onError: () => setMessage("Already checked in today or error occurred."),
   });
 
-  // Check Out
   const checkOut = useMutation({
     mutationFn: async () => {
       const { data } = await axiosClient.post(
-        `http://localhost:8082/api/attendance/checkout/${EMPLOYEE_ID}`
+        `${BASE_URL}/api/attendance/checkout/${EMPLOYEE_ID}`
       );
       return data;
     },
@@ -52,7 +50,6 @@ export default function AttendancePage() {
 
   return (
     <div className="min-h-screen bg-slate-900 text-white">
-      {/* Navbar */}
       <nav className="bg-slate-800 border-b border-slate-700 px-6 py-4 flex justify-between items-center">
         <h1 className="text-xl font-semibold">NexusHR</h1>
         <div className="flex gap-4">
@@ -66,32 +63,25 @@ export default function AttendancePage() {
       <div className="p-8">
         <h2 className="text-2xl font-bold mb-6">Attendance</h2>
 
-        {/* Action Buttons */}
         <div className="flex gap-4 mb-6">
-          <button
-            onClick={() => checkIn.mutate()}
+          <button onClick={() => checkIn.mutate()}
             disabled={checkIn.isPending}
-            className="bg-green-600 hover:bg-green-500 text-white px-6 py-2.5 rounded-lg font-medium transition"
-          >
+            className="bg-green-600 hover:bg-green-500 text-white px-6 py-2.5 rounded-lg font-medium transition">
             {checkIn.isPending ? "Checking in..." : "Check In"}
           </button>
-          <button
-            onClick={() => checkOut.mutate()}
+          <button onClick={() => checkOut.mutate()}
             disabled={checkOut.isPending}
-            className="bg-red-600 hover:bg-red-500 text-white px-6 py-2.5 rounded-lg font-medium transition"
-          >
+            className="bg-red-600 hover:bg-red-500 text-white px-6 py-2.5 rounded-lg font-medium transition">
             {checkOut.isPending ? "Checking out..." : "Check Out"}
           </button>
         </div>
 
-        {/* Message */}
         {message && (
           <p className="text-green-400 bg-green-900/30 border border-green-800 rounded-lg px-4 py-2 mb-6 text-sm">
             {message}
           </p>
         )}
 
-        {/* Attendance Table */}
         <div className="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden">
           <table className="w-full text-sm">
             <thead className="bg-slate-700">
