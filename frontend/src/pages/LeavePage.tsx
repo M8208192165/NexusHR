@@ -5,7 +5,6 @@ import axiosClient from "../api/axiosClient";
 
 const EMPLOYEE_ID = 1;
 const BASE_URL = "https://nexushr-employee.onrender.com";
-
 export default function LeavePage() {
   const navigate = useNavigate();
   const [message, setMessage] = useState("");
